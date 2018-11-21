@@ -64,10 +64,28 @@ function loadAllItems() {
         "***<没钱赚商店>购物清单***\n"+
         "名称：雪碧, 数量：1瓶, 单价：3.00(元), 小计：3.00(元)\n"+
         "----------------------\n"+
+        "Saving：0.00(元)\n"+
         "总计：3.00(元)\n"+
         "**********************"
     );
   });
+
+  it ('should print only 1 item recepit', () => {
+    const input = [
+        'ITEM000001',
+        'ITEM000001',
+        'ITEM000001'
+      ]
+    expect(printReceipt(input, loadAllItems(), loadPromotions())).toBe(
+        "***<没钱赚商店>购物清单***\n"+
+        "名称：雪碧, 数量：3瓶, 单价：3.00(元), 小计：9.00(元)\n"+
+        "----------------------\n"+
+        "Saving：3.00(元)\n"+
+        "总计：6.00(元)\n"+
+        "**********************"
+    );
+  });
+
 // });
 // it ('should print receipt', () => {
 //     const input = [
