@@ -85,9 +85,9 @@ function loadPromotions() {
       ]
     expect(printReceipt(input, loadAllItems(), loadPromotions())).toBe(
         "***<store earning no money>Receipt***\n"+
-         "Name：Sprite, Quantity：3bottle, Unit price：3.00(yuan), Subtotal：9.00(yuan)\n"+
+         "Name：Sprite, Quantity：3bottle, Unit price：3.00(yuan), Subtotal：6.00(yuan)\n"+
          "----------------------\n"+
-         "Total：9.00(yuan)\n"+
+         "Total：6.00(yuan)\n"+
          "Saving：3.00(yuan)\n"+
          "**********************"
     );
@@ -111,11 +111,11 @@ function loadPromotions() {
        ]
      expect(printReceipt(input, loadAllItems(), loadPromotions())).toBe(
         "***<store earning no money>Receipt***\n"+
-         "Name：Sprite, Quantity：5bottle, Unit price：3.00(yuan), Subtotal：15.00(yuan)\n"+
+         "Name：Sprite, Quantity：5bottle, Unit price：3.00(yuan), Subtotal：12.00(yuan)\n"+
          "Name：Litchi, Quantity：2kg, Unit price：15.00(yuan), Subtotal：30.00(yuan)\n"+
-         "Name：Noodles, Quantity：3bag, Unit price：4.50(yuan), Subtotal：13.50(yuan)\n"+
+         "Name：Noodles, Quantity：3bag, Unit price：4.50(yuan), Subtotal：9.00(yuan)\n"+
          "----------------------\n"+
-         "Total：58.50(yuan)\n"+
+         "Total：51.00(yuan)\n"+
          "Saving：7.50(yuan)\n"+
          "**********************"
 
