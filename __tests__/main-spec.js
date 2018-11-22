@@ -67,8 +67,8 @@ function loadPromotions() {
         "***<store earning no money>Receipt***\n"+
         "Name：Sprite, Quantity：1bottle, Unit price：3.00(yuan), Subtotal：3.00(yuan)\n"+
         "----------------------\n"+
-        "Saving：0.00(yuan)\n"+
         "Total：3.00(yuan)\n"+
+        "Saving：0.00(yuan)\n"+
         "**********************"
     );
   });
@@ -87,8 +87,8 @@ function loadPromotions() {
         "***<store earning no money>Receipt***\n"+
          "Name：Sprite, Quantity：3bottle, Unit price：3.00(yuan), Subtotal：9.00(yuan)\n"+
          "----------------------\n"+
+         "Total：9.00(yuan)\n"+
          "Saving：3.00(yuan)\n"+
-         "Total：6.00(yuan)\n"+
          "**********************"
     );
   });
@@ -115,8 +115,8 @@ function loadPromotions() {
          "Name：Litchi, Quantity：2kg, Unit price：15.00(yuan), Subtotal：30.00(yuan)\n"+
          "Name：Noodles, Quantity：3bag, Unit price：4.50(yuan), Subtotal：13.50(yuan)\n"+
          "----------------------\n"+
+         "Total：58.50(yuan)\n"+
          "Saving：7.50(yuan)\n"+
-         "Total：51.00(yuan)\n"+
          "**********************"
 
      );

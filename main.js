@@ -1,6 +1,6 @@
 function printReceipt (barcodes, database, promotions) {
+    
     let itemList=[]
-
     barcodes.forEach(barcode => {
         let splitBarcode = barcode.split('-')
         let bar = splitBarcode[0]
@@ -16,13 +16,9 @@ function printReceipt (barcodes, database, promotions) {
         text+="Subtotal："+smallTotal.toFixed(2)+"(yuan)\n"
         total+=smallTotal
     })
-    
-    let saving = applyPromotion(itemList, promotions)
-    total-=saving
-
-    text+= '----------------------\n' 
-        + 'Saving：'+saving.toFixed(2)+'(yuan)\n'
+    text+='----------------------\n' 
         + 'Total：'+total.toFixed(2)+'(yuan)\n' 
+        + 'Saving：'+applyPromotion(itemList, promotions).toFixed(2)+'(yuan)\n'
         + '**********************'
     return text
 }
