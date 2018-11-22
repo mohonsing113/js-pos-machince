@@ -55,7 +55,10 @@ function loadPromotions() {
 }
   
 
-  
+  /*Given 1 item in receipt
+    When print receipt
+    Then I get receipt with one item 
+  */
   it ('should print only 1 item receipt', () => {
     const input = [
         'ITEM000001'
@@ -70,6 +73,10 @@ function loadPromotions() {
     );
   });
 
+  /*Given 1 item with 3 count in receipt and can trigger buy 2 get 1 free promotion
+    When print receipt
+    Then I get receipt with one item with saving
+  */
   it ('should print only 1 item receipt with saving', () => {
     const input = [
         'ITEM000001',
@@ -86,7 +93,10 @@ function loadPromotions() {
     );
   });
 
-
+  /*Given 3 item with 3 count in receipt and can trigger buy 2 get 1 free promotion and weight checking
+    When print receipt
+    Then I get receipt with one item with saving
+  */
  it ('should print receipt with weight checking and saving', () => {
      const input = [
          'ITEM000001',
